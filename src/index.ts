@@ -7,6 +7,7 @@ export * as Card from "./components/card";
 export { Checkbox } from "./components/checkbox/checkbox";
 export * as ContextMenu from "./components/context-menu";
 export * as Dialog from "./components/dialog";
+export * as Form from "./components/form";
 export { Input } from "./components/input/input";
 export { Label } from "./components/label/label";
 export * as Popover from "./components/popover";
