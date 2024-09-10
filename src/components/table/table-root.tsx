@@ -1,4 +1,4 @@
-import { component$, type QwikJSX } from "@builder.io/qwik";
+import { component$, Slot, type QwikJSX } from "@builder.io/qwik";
 import { cn } from "@qwik-ui/utils";
 
 export const TableRoot = component$<QwikJSX.IntrinsicElements["table"]>(({ class: className, ...props }) => (
@@ -6,6 +6,8 @@ export const TableRoot = component$<QwikJSX.IntrinsicElements["table"]>(({ class
     <table
       class={cn("w-full caption-bottom text-sm", className)}
       {...props}
-    />
+    >
+      <Slot />
+    </table>
   </div>
 ));

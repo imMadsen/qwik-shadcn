@@ -1,6 +1,6 @@
 
 import { cva, type VariantProps } from "class-variance-authority"
-import { component$, type QwikJSX } from "@builder.io/qwik"
+import { component$, Slot, type QwikJSX } from "@builder.io/qwik"
 import { cn } from "@qwik-ui/utils"
 
 const badgeVariants = cva(
@@ -26,7 +26,9 @@ const badgeVariants = cva(
 export type BadgeProps = QwikJSX.IntrinsicElements["div"] & VariantProps<typeof badgeVariants>
 
 const Badge = component$<BadgeProps>(({ class: className, variant, ...props }) => (
-    <div class={cn(badgeVariants({ variant }), className)} {...props} />
+    <div class={cn(badgeVariants({ variant }), className)} {...props}>
+      <Slot />
+    </div>
 ))
 
 export { Badge, badgeVariants }

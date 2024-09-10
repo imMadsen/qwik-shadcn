@@ -1,4 +1,4 @@
-import { component$, type QwikJSX } from "@builder.io/qwik";
+import { component$, Slot, type QwikJSX } from "@builder.io/qwik";
 import { cn } from "@qwik-ui/utils";
 
 export const TableFooter = component$<QwikJSX.IntrinsicElements["tfoot"]>(({ class: className, ...props }) => (
@@ -8,5 +8,7 @@ export const TableFooter = component$<QwikJSX.IntrinsicElements["tfoot"]>(({ cla
       className
     )}
     {...props}
-  />
+  >
+    <Slot />
+  </tfoot>
 ));
