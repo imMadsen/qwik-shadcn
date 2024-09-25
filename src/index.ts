@@ -2,7 +2,7 @@ export * as Alert from "./components/alert";
 export * as AlertDialog from "./components/alert-dialog";
 export * as Avatar from "./components/avatar";
 export { Badge } from "./components/badge/badge";
-export { Button } from "./components/button/button";
+export { Button, buttonVariants } from "./components/button/button";
 export * as Card from "./components/card";
 export { Checkbox } from "./components/checkbox/checkbox";
 export * as ContextMenu from "./components/context-menu";
