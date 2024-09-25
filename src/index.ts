@@ -15,3 +15,4 @@ export * as Select from "./components/select";
 export { Skeleton } from "./components/skeleton/skeleton";
 export * as Table from "./components/table";
 export { Textarea } from "./components/textarea/textarea";
+export * as Tooltip from "./components/tooltip";

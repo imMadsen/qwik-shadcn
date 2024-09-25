@@ -2,6 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import { Header } from "./components/header";
 import { SidebarNavigation } from "./components/sidebar-navigation";
 import "./global.css";
+import { Tooltip } from ".";
 
 export default component$(() => {
   return (
@@ -29,6 +30,15 @@ export default component$(() => {
                         </path>
                       </svg>
                       <div class="text-foreground">Accordion</div>
+
+                      <Tooltip.Root>
+                        <Tooltip.Panel>
+                          Rasmus Madsen
+                        </Tooltip.Panel>
+                        <Tooltip.Trigger>
+                          Trigger
+                        </Tooltip.Trigger>
+                      </Tooltip.Root>
                     </div>
                   </div>
                 </main>
