@@ -7,7 +7,7 @@ type FormLabelProps = QwikJSX.IntrinsicElements["label"] & {
 
 export const FormLabel = component$<FormLabelProps>(({ class: className, error, ...props }) => (
     <label
-    class={cn(error && "text-destructive", className)}
+    class={cn(error && "text-destructive", "text-sm font-medium leading-none", className)}
     {...props}
     >
         <Slot />

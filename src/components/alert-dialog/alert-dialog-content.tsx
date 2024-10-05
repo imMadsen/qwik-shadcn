@@ -16,12 +16,14 @@ export const AlertDialogContent = component$<PropsOf<typeof HeadlessModal.Panel>
     return (<>
         <HeadlessModal.Panel
             class={cn(
-                "fixed left-[50%] top-[50%] z-50 w-full max-w-lg translate-x-[-100%] translate-y-[-150%] gap-4 border bg-background p-6 shadow-lg sm:rounded-lg",
+                "fixed z-50 w-full max-w-lg bg-transparent",
                 className
             )}
             {...props}
         >
-            <Slot />
+            <div class="grid gap-4 border bg-background p-6 shadow-lg sm:rounded-lg">
+                <Slot />
+            </div>
         </HeadlessModal.Panel>
     </>
     )
