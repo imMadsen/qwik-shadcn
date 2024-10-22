@@ -1,0 +1,16 @@
+export { SidebarContent as Content } from "./sidebar-content";
+export { SidebarFooter as Footer } from "./sidebar-footer";
+export { SidebarGroup as Group } from "./sidebar-group";
+export { SidebarGroupAction as GroupAction } from "./sidebar-group-action";
+export { SidebarGroupContent as GroupContent } from "./sidebar-group-content";
+export { SidebarGroupLabel as GroupLabel } from "./sidebar-group-label";
+export { SidebarHeader as Header } from "./sidebar-header";
+export { SidebarInput as Input } from "./sidebar-input";
+export { SidebarInset as Inset } from "./sidebar-inset";
+export { SidebarMenu as Menu } from "./sidebar-menu";
+export { SidebarPanel as Panel } from "./sidebar-panel";
+export { SidebarMenuItem as MenuItem } from "./sidebar-menu-item";
+export { SidebarMenuButton as MenuButton } from "./sidebar-menu-button";
+export { SidebarRoot as Root } from "./sidebar-root";
+export { SidebarTrigger as Trigger } from "./sidebar-trigger";
+export { SidebarRail as Rail } from "./sidebar-rail";
