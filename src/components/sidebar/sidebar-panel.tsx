@@ -1,4 +1,4 @@
-import { component$, Slot, type CSSProperties, type QwikJSX } from "@builder.io/qwik"
+import { component$, Slot, useSignal, useVisibleTask$, type CSSProperties, type QwikJSX } from "@builder.io/qwik"
 import { cn } from "@qwik-ui/utils"
 import { useSidebar } from "./sidebar"
 import * as Sheet from "../sheet";
@@ -21,7 +21,7 @@ export const SidebarPanel = component$<SidebarPanelProps>(
             ...props
         }
     ) => {
-        const { isMobile, state } = useSidebar()
+        const { isMobile, state, openMobile } = useSidebar()
 
         if (collapsible === "none") {
             return (
@@ -39,8 +39,9 @@ export const SidebarPanel = component$<SidebarPanelProps>(
 
         if (isMobile.value) {
             return (
-                <Sheet.Root>
+                <Sheet.Root bind:show={openMobile}>
                     <Sheet.Panel
+                        side="left"
                         data-sidebar="sidebar"
                         data-mobile="true"
                         class="w-[--sidebar-width] bg-sidebar p-0 text-sidebar-foreground [&>button]:hidden"
