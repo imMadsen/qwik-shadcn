@@ -16,4 +16,10 @@ export { Skeleton } from "./components/skeleton/skeleton";
 export * as Table from "./components/table";
 export { Textarea } from "./components/textarea/textarea";
 export * as Tooltip from "./components/tooltip";
+export * as Sheet from "./components/sheet";
 export * from "./components/typeography/typography";
+export * as Sidebar from "./components/sidebar";
+export * as Combobox from "./components/combobox";
+
+// Hooks
+export { useSidebarProvider, useSidebar } from "./components/sidebar/sidebar";
