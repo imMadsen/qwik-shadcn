@@ -20,6 +20,10 @@ export * as Sheet from "./components/sheet";
 export * from "./components/typeography/typography";
 export * as Sidebar from "./components/sidebar";
 export * as Combobox from "./components/combobox";
+export * as DropdownMenu from "./components/dropdown-menu";
+export * as Breadcrumb from "./components/breadcumb";
+
+export { sidebarMenuButtonVariants } from "./components/sidebar/sidebar-menu-button";
 
 // Hooks
 export { useSidebarProvider, useSidebar } from "./components/sidebar/sidebar";
