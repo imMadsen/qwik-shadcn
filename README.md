@@ -1,6 +1,47 @@
-## Qwik-shadcn: A Component Library for Qwik
-Qwik-shadcn is an experimental component library for Qwik, inspired by the modular approach of shadcn. This repository aims to provide reusable UI components tailored for Qwik applications while adhering to Qwik best practices to the best of my abilities.
+# Qwik Library ⚡️
 
-⚠️ Note: This is not a complete package and should not be considered a finished product. The repository provides the source code for developers looking to use or customize components for their Qwik projects. Much like shadcn, this is meant as a source code solution rather than a pre-built package.
+- [Qwik Docs](https://qwik.dev/)
+- [Discord](https://qwik.dev/chat)
+- [Qwik on GitHub](https://github.com/QwikDev/qwik)
+- [@QwikDev](https://twitter.com/QwikDev)
+- [Vite](https://vitejs.dev/)
+- [Partytown](https://partytown.builder.io/)
+- [Mitosis](https://github.com/BuilderIO/mitosis)
+- [Builder.io](https://www.builder.io/)
 
-Feel free to contribute to the project any way you want
+---
+
+## Project Structure
+
+Inside your project, you'll see the following directories and files:
+
+```
+├── public/
+│   └── ...
+└── src/
+    ├── components/
+    │   └── ...
+    └── index.ts
+```
+
+- `src/components`: Recommended directory for components.
+
+- `index.ts`: The entry point of your component library, make sure all the public components are exported from this file.
+
+## Development
+
+Development mode uses [Vite's development server](https://vitejs.dev/). For Qwik during development, the `dev` command will also server-side render (SSR) the output. The client-side development modules are loaded by the browser.
+
+```
+pnpm dev
+```
+
+> Note: during dev mode, Vite will request many JS files, which does not represent a Qwik production build.
+
+## Production
+
+The production build should generate the production build of your component library in (./lib) and the typescript type definitions in (./lib-types).
+
+```
+pnpm build
+```

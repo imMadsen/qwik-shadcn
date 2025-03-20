@@ -25,7 +25,7 @@ export default defineConfig(() => {
         // externalize deps that shouldn't be bundled into the library
         external: [
           /^node:.*/,
-          '@qwik-city-plan',
+          "@qwik-city-plan",
           "@qwik-city-sw-register",
           ...excludeAll(dependencies),
           ...excludeAll(peerDependencies),
